@@ -1,0 +1,4 @@
+ad_set_name,spend_usd,impressions,clicks,ctr_pct,cpc_usd,purchases,cpa_usd,frequency,decision,decision_rule_ref
+Broad-US-25-54-ADV+,198.40,45200,610,1.35,0.33,5,39.68,2.1,scale,CPA <= guardrail 55 and freq < 2.5
+Interest-Cooking-US,156.20,38400,422,1.10,0.37,2,78.10,2.4,kill,CPA > guardrail x1.5 and spend > 40
+Interest-Cooking-STATIC-only,63.72,15400,188,1.22,0.34,1,63.72,2.0,hold,conversions < 5 spend < 40 threshold N/A cumulative kill sibling

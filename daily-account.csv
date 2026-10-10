@@ -1,0 +1,8 @@
+date,spend_usd,impressions,clicks,ctr_pct,cpc_usd,purchases,cpa_usd,phase_note
+2026-10-04,58.20,11200,134,1.20,0.43,0,,D1 launch learning
+2026-10-05,62.40,12100,145,1.20,0.43,1,62.40,D2 first purchase
+2026-10-06,61.80,11950,142,1.19,0.44,1,61.80,D3 hold structure
+2026-10-07,60.50,11500,138,1.20,0.44,2,30.25,D4 interest CPA drift
+2026-10-08,59.10,11300,135,1.19,0.44,1,59.10,D5 kill rule check
+2026-10-09,58.72,11100,133,1.20,0.44,2,29.36,D6 scale candidate
+2026-10-10,57.60,10950,131,1.20,0.44,1,57.60,D7 close week
