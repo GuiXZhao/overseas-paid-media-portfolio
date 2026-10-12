@@ -78,10 +78,18 @@ for i in range(7):
             f"{dates[i]},{name},{day_s:.2f},{cum:.2f},{p},{cpa},{note}"
         )
 
+TOTAL_IMP = 45200 + 41200  # match adset-summary.csv
+TOTAL_CLK = 610 + 445
+total_spend = sum(DAILY_ACCOUNT)
+imp_daily = [int(round(TOTAL_IMP * s / total_spend)) for s in DAILY_ACCOUNT]
+imp_daily[-1] += TOTAL_IMP - sum(imp_daily)
+clk_daily = [int(round(TOTAL_CLK * s / total_spend)) for s in DAILY_ACCOUNT]
+clk_daily[-1] += TOTAL_CLK - sum(clk_daily)
+
 daily_account_lines = [
     "date,spend_usd,impressions,clicks,ctr_pct,cpc_usd,purchases,cpa_usd,phase_note"
 ]
-acc_p = [0, 1, 2, 2, 3, 5, 7]  # 7 total purchases
+acc_p = [0, 1, 2, 2, 3, 5, 7]  # cumulative purchases
 notes = [
     "D1 launch learning",
     "D2 first purchase",
@@ -92,17 +100,14 @@ notes = [
     "D7 close week",
 ]
 for i, sp in enumerate(DAILY_ACCOUNT):
+    imp, clk = imp_daily[i], clk_daily[i]
+    ctr = round(clk / imp * 100, 2) if imp else 0.0
+    cpc = round(sp / clk, 2) if clk else ""
     p = acc_p[i]
-    cpa = f"{sp / (p - acc_p[i - 1]):.2f}" if i > 0 and p > acc_p[i - 1] else ""
-    if i == 0:
-        cpa = ""
-    elif p == acc_p[i - 1]:
-        cpa = ""
-    else:
-        day_p = p - acc_p[i - 1]
-        cpa = f"{sp / day_p:.2f}" if day_p else ""
+    day_p = p - (acc_p[i - 1] if i else 0)
+    cpa = f"{sp / day_p:.2f}" if day_p > 0 else ""
     daily_account_lines.append(
-        f"{dates[i]},{sp:.2f},,,,,{p},{cpa},{notes[i]}"
+        f"{dates[i]},{sp:.2f},{imp},{clk},{ctr},{cpc},{p},{cpa},{notes[i]}"
     )
 
 adset_summary = """ad_set_name,spend_usd,impressions,clicks,ctr_pct,cpc_usd,purchases,cpa_usd,frequency,decision,decision_rule_ref

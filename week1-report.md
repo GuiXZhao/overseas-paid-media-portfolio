@@ -40,15 +40,15 @@ Interest met kill rule on **D5** (cum spend $219.92, CPA $109.96). **Paused befo
 
 See [daily-account.csv](./daily-account.csv). [adset-daily.csv](./adset-daily.csv) shows **Interest spend = 0 on D6–D7**.
 
-| Day | Spend | Purch. | Note |
-|-----|-------|--------|------|
-| D1 | $58.20 | 0 | Launch |
-| D2 | $62.40 | 1 | First purchase |
-| D3 | $61.80 | 1 | Hold |
-| D4 | $60.50 | 2 | Interest CPA drift; trim Interest |
-| D5 | $59.10 | 3 | Kill rule → **pause Interest** |
-| D6 | $58.72 | 5 | **Broad only**, +20% budget |
-| D7 | $57.60 | 7 | Close week |
+| Day | Spend | Impr. | Clicks | CTR | Purch. (cum) | Daily CPA | Note |
+|-----|-------|-------|--------|-----|--------------|-----------|------|
+| D1 | $58.20 | 12,021 | 147 | 1.22% | 0 | — | Launch |
+| D2 | $62.40 | 12,888 | 157 | 1.22% | 1 | $62.40 | First purchase |
+| D3 | $61.80 | 12,764 | 156 | 1.22% | 2 | $61.80 | Hold |
+| D4 | $60.50 | 12,496 | 153 | 1.22% | 2 | — | No new purch.; trim Interest |
+| D5 | $59.10 | 12,207 | 149 | 1.22% | 3 | $59.10 | Kill rule → pause Interest |
+| D6 | $58.72 | 12,128 | 148 | 1.22% | 5 | $29.36 | Broad only, +20% |
+| D7 | $57.60 | 11,896 | 145 | 1.22% | 7 | $28.80 | Close week |
 
 ---
 

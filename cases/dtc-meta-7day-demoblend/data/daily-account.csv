@@ -1,8 +1,8 @@
 date,spend_usd,impressions,clicks,ctr_pct,cpc_usd,purchases,cpa_usd,phase_note
-2026-10-04,58.20,,,,,0,,D1 launch learning
-2026-10-05,62.40,,,,,1,62.40,D2 first purchase
-2026-10-06,61.80,,,,,2,61.80,D3 hold structure
-2026-10-07,60.50,,,,,2,,D4 interest CPA drift trim budget
-2026-10-08,59.10,,,,,3,59.10,D5 pause Interest after kill rule
-2026-10-09,58.72,,,,,5,29.36,D6 Broad +20% only
-2026-10-10,57.60,,,,,7,28.80,D7 close week
+2026-10-04,58.20,12021,147,1.22,0.4,0,,D1 launch learning
+2026-10-05,62.40,12888,157,1.22,0.4,1,62.40,D2 first purchase
+2026-10-06,61.80,12764,156,1.22,0.4,2,61.80,D3 hold structure
+2026-10-07,60.50,12496,153,1.22,0.4,2,,D4 interest CPA drift trim budget
+2026-10-08,59.10,12207,149,1.22,0.4,3,59.10,D5 pause Interest after kill rule
+2026-10-09,58.72,12128,148,1.22,0.4,5,29.36,D6 Broad +20% only
+2026-10-10,57.60,11896,145,1.22,0.4,7,28.80,D7 close week
