@@ -12,6 +12,7 @@ DemoBlend = fictional DTC brand. CSV numbers = simulation (not live Ads Manager)
 |------|------|
 | Week-1 report | [week1-report.md](./week1-report.md) |
 | 7-day account CSV | [daily-account.csv](./daily-account.csv) |
+| 7-day ad set CSV | [adset-daily.csv](./adset-daily.csv) |
 | Ad set summary | [adset-summary.csv](./adset-summary.csv) |
 | Creative summary | [creative-summary.csv](./creative-summary.csv) |
 | Account tree | [account-structure.md](./account-structure.md) |

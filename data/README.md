@@ -5,6 +5,7 @@ Simulated metrics for the [DemoBlend week-one report](../week1-report.md).
 | File |
 |------|
 | [daily-account.csv](./daily-account.csv) |
+| [adset-daily.csv](./adset-daily.csv) |
 | [adset-summary.csv](./adset-summary.csv) |
 | [creative-summary.csv](./creative-summary.csv) |
 

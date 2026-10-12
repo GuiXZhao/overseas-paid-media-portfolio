@@ -17,6 +17,8 @@ Campaign  [TEST][202610][Purchase] DemoBlend-US
     Ad  STATIC-PriceAnchor-v1
 ```
 
+Week 1: **3 ad sets** (1 Broad + 2 Interest variants). Hook A/B only on Broad. Interest ads exist to run the audience stack and to compare the same Outcome video vs Broad ([creative-summary.csv](./creative-summary.csv)). Week 2 adds **UGC-POV-v2 on Broad only**.
+
 Tracking (simulation): Pixel + CAPI, Purchase event, GA4 within 12% of Meta.
 
 Full report: [week1-report.md](./week1-report.md)

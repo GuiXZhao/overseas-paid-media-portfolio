@@ -6,7 +6,7 @@
 **优化目标：** 购物（Purchase）  
 **数据性质：** **方法论仿真** — 下表数字自洽，非广告后台导出；日后可换成脱敏真实 CSV，结构不变  
 
-**附件：** [daily-account.csv](../../../daily-account.csv) · [adset-summary.csv](../../../adset-summary.csv) · [creative-summary.csv](../../../creative-summary.csv) · [账户结构](./assets/account-structure.md)  
+**附件：** [daily-account.csv](../../../daily-account.csv) · [adset-daily.csv](../../../adset-daily.csv) · [adset-summary.csv](../../../adset-summary.csv) · [creative-summary.csv](../../../creative-summary.csv) · [账户结构](./assets/account-structure.md)  
 
 **背景：** Hook 方向来自 [搅拌机品类竞品日志](../../appendix/competitive-log-blenders.md)；CPA 护栏对照 [家居品类公开基准](../../references/simulation-vs-benchmark.md)。虚实划分见 [中文 README](../../README.md#约定)。
 
@@ -14,15 +14,15 @@
 
 ## 摘要
 
-第一周用约 **$418** 做 Purchase 探测：两个受众假设（**Broad 自动扩量** vs **Interest 做饭兴趣栈**），Broad 内两条视频（**结果向** vs **参数向**）。**Broad 在成本上胜出；Interest 触发关停规则。** 账户层面 **8 单 · CPA $52.29** 是「好广告组 + 差广告组」混合后的数——**不要用账户平均 CPA 决定加预算，要看每个广告组花够钱后的 CPA。**
+第一周用约 **$418** 做 Purchase 探测：**1 个 Broad 组 + 2 个 Interest 组**（主组混投视频/静态，附属组仅静态，见[账户结构](./assets/account-structure.md)）。Week1 **主线**是 Broad 栈 vs Interest 栈谁更划算；Broad 内再比两条视频（**结果向** vs **参数向**）。**Broad 胜出；Interest 栈关停。** 账户 **8 单 · CPA $52.29** 是好组+差组混合——**决策看各广告组累计 CPA，别看账户平均。**
 
 **本周动作**
 
 | 广告组 | 7日花费 | 订单 | CPA | 决策 |
 |--------|---------|------|-----|------|
 | Broad-US-25-54-ADV+ | $198.40 | 5 | **$39.68** | **加预算 20%** · 频次 2.1 正常 |
-| Interest-Cooking-US | $156.20 | 2 | **$78.10** | **关停** · 超 kill 线 $82.5 且花费 > $40 |
-| Interest-Cooking-STATIC-only | $63.72 | 1 | $63.72 | **关闭** · 随 Interest 栈一起停 |
+| Interest-Cooking-US | $156.20 | 2 | **$78.10** | **关停** · 花费 > $40 且 CPA ≥ Broad 的 1.95 倍（≈$77.4） |
+| Interest-Cooking-STATIC-only | $63.72 | 1 | $63.72 | **关闭** · Interest 栈一并停投，不再加预算 |
 
 **下一格（只改一个变量）：** 保留 Broad + 结果向胜出素材 · **仅新增 UGC-POV-v2** · 不改受众 · Brief 见 [此处](../../deliverables/creative-brief-example.md)。
 
@@ -35,14 +35,9 @@
 | 规划客单价 | ~$89 | 小家电 DTC |
 | 主 KPI | 购物 CPA | 销售战役，不是纯引流 |
 | CPA 护栏 | **≤ $55** | 约为家居品类公开中位 × 1.2，留给 learning 波动 |
-| 关停规则 | 某广告组 CPA **> $82.5** 且花费 **> $40** | 差组早停，少「再观察一天」 |
+| 关停规则 | 花费 **> $40**，且（CPA **> $82.5** **或** CPA **≥ 当周最优广告组 CPA 的 1.95 倍**） | 差组早停；本案例 Interest 主组 $78.10 触发相对 Broad 规则 |
 | 预算 | 账户约 $60/天 · 广告组上限 | 结构正常时，一周争取 5–8 单用于判断 |
-| 变量顺序 | **先受众**（Broad vs Interest）· **再在 Broad 内比 Hook** | 同一周不要同时改受众和素材 |
-
-**假设（测前写好）**
-
-1. 同样「结果向」视频，Broad 的购物 CPA 不劣于 Interest 栈。  
-2. 在 Broad 内，前 3 秒讲「30 秒做好」优于堆参数（同 offer、同落地页）。
+| 变量顺序 | **先受众栈**（Broad vs Interest）· **再在 Broad 内比两条视频** | 同一周不在 Interest 内做创意大矩阵；Interest 上素材仅为「能投出去 + 对照同一视频在 Broad 的表现」 |
 
 ---
 
@@ -76,7 +71,7 @@ UTM：`utm_source=facebook&utm_medium=paid&utm_campaign={campaign.name}`
 
 ## 广告组复盘
 
-[adset-summary.csv](../../../adset-summary.csv)
+累计决策：[adset-summary.csv](../../../adset-summary.csv) · **按日下钻（三组 7 天）：** [adset-daily.csv](../../../adset-daily.csv)（与账户按日 [daily-account.csv](../../../daily-account.csv) 加总一致）
 
 ### Broad-US-25-54-ADV+ — 加码
 
@@ -96,16 +91,18 @@ UTM：`utm_source=facebook&utm_medium=paid&utm_campaign={campaign.name}`
 
 ---
 
-## 创意（仅 Broad 内公平对比）
+## 创意层说明
 
-[creative-summary.csv](../../../creative-summary.csv)
+[creative-summary.csv](../../../creative-summary.csv) 共 **5 行**：Broad 内 2 条视频做 **Hook 对比**；Interest 行用于证明 **同一 Outcome 视频在 Interest 上 CPA $98.5**，在 Broad 上 **$37.43**（受众问题）。**Week2 新增创意（UGC-POV）只在 Broad 上测**，不在本表 Week1 快照里。
+
+### Broad 内对比（公平）
 
 | 创意 | CTR | CPA | 结论 |
 |------|-----|-----|------|
 | VID-Outcome30s-v1 | 1.37% | **$37.43** | 主放量素材 |
 | VID-SpecPower-v1 | 1.33% | $43.05 | 保留，非首要加码对象 |
 
-Outcome 赢在 **CPA**，CTR 差距不大——厨房类 demo 常见。参数向不是「差」，是 **第二位**，等 UGC POV 测完再排。
+Outcome 赢在 **CPA**；参数向为 **第二位**，等 UGC POV 测完再排。
 
 ---
 

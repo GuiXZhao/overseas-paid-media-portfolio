@@ -17,6 +17,7 @@
 |------|------|
 | 主报告 | [week1-report.md](../week1-report.md) |
 | 7 日账户数据 | [daily-account.csv](../daily-account.csv) |
+| 7 日广告组数据 | [adset-daily.csv](../adset-daily.csv) |
 | 广告组汇总 | [adset-summary.csv](../adset-summary.csv) |
 | 创意汇总 | [creative-summary.csv](../creative-summary.csv) |
 | 账户结构 | [account-structure.md](../account-structure.md) |

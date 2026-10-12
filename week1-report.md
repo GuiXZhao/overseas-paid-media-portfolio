@@ -6,19 +6,19 @@ Advertiser: DemoBlend One (fictional DTC blender, ~$89 AOV, no real store)
 Objective: Purchase  
 Data: methodology simulation (not Ads Manager export)
 
-Files: [daily-account.csv](./daily-account.csv) | [adset-summary.csv](./adset-summary.csv) | [creative-summary.csv](./creative-summary.csv) | [account-structure.md](./account-structure.md)
+Files: [daily-account.csv](./daily-account.csv) | [adset-daily.csv](./adset-daily.csv) | [adset-summary.csv](./adset-summary.csv) | [creative-summary.csv](./creative-summary.csv) | [account-structure.md](./account-structure.md)
 
 ---
 
 ## Executive summary
 
-Week-one spend about **$418** on Purchase: Broad vs Interest audiences, two hooks on Broad. **Broad won; Interest killed.** Account **8 purchases, CPA $52.29** mixes a good Broad cell with a dead Interest cell. **Decide by ad set CPA, not account average.**
+Week-one spend about **$418** on Purchase: **one Broad ad set + two Interest ad sets** (see [account-structure.md](./account-structure.md)). Main read: Broad stack vs Interest stack; **two video hooks compared on Broad only**. **Broad won; Interest stack off.** Account **8 purchases, CPA $52.29** mixes a good cell with dead cells. **Decide by ad set CPA, not account average.**
 
 | Ad set | 7d spend | Purchases | CPA | Call |
 |--------|----------|-----------|-----|------|
 | Broad-US-25-54-ADV+ | $198.40 | 5 | $39.68 | Scale +20% |
 | Interest-Cooking-US | $156.20 | 2 | $78.10 | Kill |
-| Interest-Cooking-STATIC-only | $63.72 | 1 | $63.72 | Off |
+| Interest-Cooking-STATIC-only | $63.72 | 1 | $63.72 | Off (with Interest stack) |
 
 Next: Broad only, add **UGC-POV-v2** (one variable).
 
@@ -30,10 +30,8 @@ Next: Broad only, add **UGC-POV-v2** (one variable).
 |-----------|--------|
 | Primary KPI | Purchase CPA |
 | Guardrail CPA | <= $55 |
-| Kill rule | CPA > $82.5 and spend > $40 on ad set |
-| Variables | Audience first (Broad vs Interest), then hook on Broad |
-
-Hypotheses: (1) Broad matches or beats Interest with same Outcome creative. (2) Outcome hook beats spec hook on Broad.
+| Kill rule | Spend > $40 and (CPA > $82.5 **or** CPA >= 1.95x best ad set CPA). Interest main at $78.10 vs Broad $39.68 triggers relative rule. |
+| Variables | Audience stack first (Broad vs Interest), then hook test **inside Broad only** |
 
 ---
 
@@ -63,11 +61,11 @@ See [adset-summary.csv](./adset-summary.csv).
 
 ---
 
-## Creative (Broad)
+## Creative layer
 
-See [creative-summary.csv](./creative-summary.csv).
+See [creative-summary.csv](./creative-summary.csv) (**5 ads**: 2 Broad hooks + Interest rows for same-video audience proof). Week-2 **UGC-POV** is Broad-only; not in week-1 snapshot.
 
-Outcome30s CPA $37.43 vs SpecPower $43.05. Keep both; scale toward Outcome.
+**Broad hook compare:** Outcome30s CPA $37.43 vs SpecPower $43.05. Keep both; scale toward Outcome.
 
 ---
 
