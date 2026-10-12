@@ -1,22 +1,15 @@
 date,ad_set_name,spend_usd_day,spend_usd_cum,purchases_cum,cpa_usd_cum,note
-2026-10-04,Broad-US-25-54-ADV+,18.62,18.62,0,,D1 learning
-2026-10-04,Interest-Cooking-US,26.77,26.77,0,,D1 learning
-2026-10-04,Interest-Cooking-STATIC-only,12.80,12.80,0,,D1 learning
-2026-10-05,Broad-US-25-54-ADV+,19.97,38.59,0,,D2
-2026-10-05,Interest-Cooking-US,29.33,56.10,0,,D2
-2026-10-05,Interest-Cooking-STATIC-only,13.10,25.91,1,25.91,D2 first purch
-2026-10-06,Broad-US-25-54-ADV+,21.01,59.60,1,59.60,D3 hold
-2026-10-06,Interest-Cooking-US,27.81,83.91,0,,D3
-2026-10-06,Interest-Cooking-STATIC-only,12.98,38.89,1,38.89,D3
-2026-10-07,Broad-US-25-54-ADV+,24.20,83.80,2,41.90,D4 trim Interest
-2026-10-07,Interest-Cooking-US,24.20,108.11,1,108.11,D4 CPA drift
-2026-10-07,Interest-Cooking-STATIC-only,12.10,50.99,1,50.99,D4
-2026-10-08,Broad-US-25-54-ADV+,31.91,115.72,3,38.57,D5 pause Interest main
-2026-10-08,Interest-Cooking-US,14.18,122.29,1,122.29,D5 wind-down
-2026-10-08,Interest-Cooking-STATIC-only,13.00,63.99,1,63.99,D5 stack review
-2026-10-09,Broad-US-25-54-ADV+,42.28,158.00,4,39.50,D6 Broad +20%
-2026-10-09,Interest-Cooking-US,8.22,130.51,2,65.26,D6
-2026-10-09,Interest-Cooking-STATIC-only,8.22,72.21,1,72.21,D6
-2026-10-10,Broad-US-25-54-ADV+,40.40,198.40,5,39.68,D7 close scale
-2026-10-10,Interest-Cooking-US,25.69,156.20,2,78.10,D7 kill confirm
-2026-10-10,Interest-Cooking-STATIC-only,-8.49,63.72,1,63.72,D7 stack off
+2026-10-04,Broad-US-25-54-ADV+,20.20,20.20,0,,D1 learning
+2026-10-04,Interest-Cooking-US,38.00,38.00,0,,D1 learning
+2026-10-05,Broad-US-25-54-ADV+,20.40,40.60,0,,D2
+2026-10-05,Interest-Cooking-US,42.00,80.00,0,,D2
+2026-10-06,Broad-US-25-54-ADV+,17.80,58.40,0,,D3 hold
+2026-10-06,Interest-Cooking-US,44.00,124.00,0,,D3
+2026-10-07,Broad-US-25-54-ADV+,12.50,70.90,1,70.90,D4 Interest CPA drift
+2026-10-07,Interest-Cooking-US,48.00,172.00,1,172.00,D4 spend cum review
+2026-10-08,Broad-US-25-54-ADV+,11.18,82.08,2,41.04,D5 hit kill rule pause Interest
+2026-10-08,Interest-Cooking-US,47.92,219.92,2,109.96,D5 kill: spend>40 CPA>82.5 then pause
+2026-10-09,Broad-US-25-54-ADV+,58.72,140.80,4,35.20,D6 Broad +20%
+2026-10-09,Interest-Cooking-US,0.00,219.92,2,109.96,D6 paused spend 0
+2026-10-10,Broad-US-25-54-ADV+,57.60,198.40,5,39.68,D7 close scale Broad
+2026-10-10,Interest-Cooking-US,0.00,219.92,2,109.96,D7 paused spend 0

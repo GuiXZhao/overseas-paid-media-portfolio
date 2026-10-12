@@ -12,12 +12,11 @@ Campaign  [TEST][202610][Purchase] DemoBlend-US
   Ad set  Interest-Cooking-US
     Ad  VID-Outcome30s-v1
     Ad  STATIC-PriceAnchor-v1
-
-  Ad set  Interest-Cooking-STATIC-only
-    Ad  STATIC-PriceAnchor-v1
 ```
 
-Week 1: **3 ad sets** (1 Broad + 2 Interest variants). Hook A/B only on Broad. Interest ads exist to run the audience stack and to compare the same Outcome video vs Broad ([creative-summary.csv](./creative-summary.csv)). Week 2 adds **UGC-POV-v2 on Broad only**.
+Week 1: **two ad sets only** — Broad vs Interest (cooking interest). Hook compare **inside Broad** (two videos). Interest runs Outcome + one static so the cell can deliver volume; **same Outcome video** is compared to Broad for audience diagnosis. Week 2 adds **UGC-POV-v2 on Broad only**.
+
+Kill (ad set): **spend > $40 and CPA > $82.5** → pause Interest from **D6** (rule met end of **D5**).
 
 Tracking (simulation): Pixel + CAPI, Purchase event, GA4 within 12% of Meta.
 

@@ -1,6 +1,5 @@
 ad_name,ad_set,spend_usd,impressions,clicks,ctr_pct,purchases,cpa_usd,note
-VID-Outcome30s-v1,Broad-US-25-54-ADV+,112.30,25800,352,1.37,3,37.43,winner hook
-VID-SpecPower-v1,Broad-US-25-54-ADV+,86.10,19400,258,1.33,2,43.05,secondary
-VID-Outcome30s-v1,Interest-Cooking-US,98.50,24100,265,1.10,1,98.50,same creative audience mismatch
-STATIC-PriceAnchor-v1,Interest-Cooking-US,57.70,14300,157,1.10,1,57.70,CTR ok CPA high
-STATIC-PriceAnchor-v1,Interest-Cooking-STATIC-only,63.72,15400,188,1.22,1,63.72,off with Interest stack
+VID-Outcome30s-v1,Broad-US-25-54-ADV+,112.30,25800,352,1.37,3,37.43,winner hook Broad
+VID-SpecPower-v1,Broad-US-25-54-ADV+,86.10,19400,258,1.33,2,43.05,secondary Broad
+VID-Outcome30s-v1,Interest-Cooking-US,98.50,18600,210,1.13,1,98.50,same video audience mismatch
+STATIC-PriceAnchor-v1,Interest-Cooking-US,121.42,22600,235,1.04,1,121.42,supporting ad on Interest only
